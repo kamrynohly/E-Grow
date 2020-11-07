@@ -1,0 +1,6 @@
+framework module Pods_E_Grow2Tests {
+  umbrella header "Pods-E-Grow2Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
