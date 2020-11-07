@@ -25,6 +25,9 @@
 		9AC5D0CF25574C720025B5D0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC5D0CE25574C720025B5D0 /* SignUpViewController.swift */; };
 		9AC5D0D125574C7B0025B5D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC5D0D025574C7B0025B5D0 /* LoginViewController.swift */; };
 		9AC5D0D325574C830025B5D0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC5D0D225574C830025B5D0 /* FirstViewController.swift */; };
+		9AC5D0D525575F640025B5D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC5D0D425575F640025B5D0 /* HomeViewController.swift */; };
+		9AC5D0D725575F790025B5D0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC5D0D625575F790025B5D0 /* MapViewController.swift */; };
+		9AC5D0D925575F9E0025B5D0 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC5D0D825575F9E0025B5D0 /* AccountViewController.swift */; };
 		A013799E1384404B597DC00B /* Pods_E_Grow2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F394282B4020D3A670B441 /* Pods_E_Grow2.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +77,9 @@
 		9AC5D0CE25574C720025B5D0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9AC5D0D025574C7B0025B5D0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9AC5D0D225574C830025B5D0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		9AC5D0D425575F640025B5D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9AC5D0D625575F790025B5D0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9AC5D0D825575F9E0025B5D0 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		BC2F46A071449537A5857014 /* Pods-E-Grow2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Grow2Tests.release.xcconfig"; path = "Target Support Files/Pods-E-Grow2Tests/Pods-E-Grow2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BCC4FBB687B7C305E9B47FBA /* Pods-E-Grow2-E-Grow2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Grow2-E-Grow2UITests.debug.xcconfig"; path = "Target Support Files/Pods-E-Grow2-E-Grow2UITests/Pods-E-Grow2-E-Grow2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C24E9BFD6C3897F09F94DB98 /* Pods-E-Grow2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-Grow2Tests.debug.xcconfig"; path = "Target Support Files/Pods-E-Grow2Tests/Pods-E-Grow2Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +163,9 @@
 				9AC5D0CE25574C720025B5D0 /* SignUpViewController.swift */,
 				9AC5D0D025574C7B0025B5D0 /* LoginViewController.swift */,
 				9AC5D0D225574C830025B5D0 /* FirstViewController.swift */,
+				9AC5D0D425575F640025B5D0 /* HomeViewController.swift */,
+				9AC5D0D625575F790025B5D0 /* MapViewController.swift */,
+				9AC5D0D825575F9E0025B5D0 /* AccountViewController.swift */,
 			);
 			path = "E-Grow2";
 			sourceTree = "<group>";
@@ -434,11 +443,14 @@
 			files = (
 				9AC5D0D125574C7B0025B5D0 /* LoginViewController.swift in Sources */,
 				9A6DF41925572EFD002CD8B5 /* ViewController.swift in Sources */,
+				9AC5D0D925575F9E0025B5D0 /* AccountViewController.swift in Sources */,
 				9A41E247255734A00063440D /* MobileNet.mlmodel in Sources */,
 				9AC5D0CF25574C720025B5D0 /* SignUpViewController.swift in Sources */,
 				9A6DF41F25572EFE002CD8B5 /* E_Grow2.xcdatamodeld in Sources */,
 				9AC5D0D325574C830025B5D0 /* FirstViewController.swift in Sources */,
 				9A6DF41525572EFD002CD8B5 /* AppDelegate.swift in Sources */,
+				9AC5D0D725575F790025B5D0 /* MapViewController.swift in Sources */,
+				9AC5D0D525575F640025B5D0 /* HomeViewController.swift in Sources */,
 				9A41E249255734B60063440D /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				9A6DF41725572EFD002CD8B5 /* SceneDelegate.swift in Sources */,
 				9A41E24B255734BE0063440D /* ImageClassificationViewController.swift in Sources */,
