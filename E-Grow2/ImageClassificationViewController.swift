@@ -14,8 +14,16 @@ class ImageClassificationViewController: UIViewController {
     // MARK: - IBOutlets
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var cameraButton: UIBarButtonItem!
+    @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var classificationLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        cameraButton.layer.cornerRadius = 22
+        cameraButton.layer.borderWidth = 1
+        cameraButton.layer.borderColor = UIColor.init(red: 224/255, green: 224/255, blue: 224/255, alpha: 1).cgColor
+        cameraButton.contentEdgeInsets = UIEdgeInsets(top: 10,left: 10,bottom: 10,right: 10)
+    }
     
     // MARK: - Image Classification
     
@@ -88,26 +96,27 @@ class ImageClassificationViewController: UIViewController {
     
     // MARK: - Photo Actions
     
-    @IBAction func takePicture() {
-        // Show options for the source picker only if the camera is available.
-        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
-            presentPhotoPicker(sourceType: .photoLibrary)
-            return
-        }
-        
-        let photoSourcePicker = UIAlertController()
-        let takePhoto = UIAlertAction(title: "Take Photo", style: .default) { [unowned self] _ in
-            self.presentPhotoPicker(sourceType: .camera)
-        }
-        let choosePhoto = UIAlertAction(title: "Choose Photo", style: .default) { [unowned self] _ in
-            self.presentPhotoPicker(sourceType: .photoLibrary)
-        }
-        
-        photoSourcePicker.addAction(takePhoto)
-        photoSourcePicker.addAction(choosePhoto)
-        photoSourcePicker.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
-        present(photoSourcePicker, animated: true)
+    
+    @IBAction func takePicture(_ sender: Any) {
+            // Show options for the source picker only if the camera is available.
+            guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+                presentPhotoPicker(sourceType: .photoLibrary)
+                return
+            }
+            
+            let photoSourcePicker = UIAlertController()
+            let takePhoto = UIAlertAction(title: "Take Photo", style: .default) { [unowned self] _ in
+                self.presentPhotoPicker(sourceType: .camera)
+            }
+            let choosePhoto = UIAlertAction(title: "Choose Photo", style: .default) { [unowned self] _ in
+                self.presentPhotoPicker(sourceType: .photoLibrary)
+            }
+            
+            photoSourcePicker.addAction(takePhoto)
+            photoSourcePicker.addAction(choosePhoto)
+            photoSourcePicker.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            
+            present(photoSourcePicker, animated: true)
     }
     
     func presentPhotoPicker(sourceType: UIImagePickerController.SourceType) {
