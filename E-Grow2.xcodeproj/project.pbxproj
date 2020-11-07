@@ -616,13 +616,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A38V9C266Y;
+				DEVELOPMENT_TEAM = Z4FPUD756C;
 				INFOPLIST_FILE = "E-Grow2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KamrynOhly.E-Grow2";
+				PRODUCT_BUNDLE_IDENTIFIER = "Victoria.E-Grow2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -635,13 +635,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A38V9C266Y;
+				DEVELOPMENT_TEAM = Z4FPUD756C;
 				INFOPLIST_FILE = "E-Grow2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.KamrynOhly.E-Grow2";
+				PRODUCT_BUNDLE_IDENTIFIER = "Victoria.E-Grow2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
