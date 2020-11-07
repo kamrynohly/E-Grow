@@ -121,11 +121,11 @@ class ImageClassificationViewController: UIViewController {
 extension ImageClassificationViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     // MARK: - Handling Image Picker Selection
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         picker.dismiss(animated: true)
         
         // We always expect `imagePickerController(:didFinishPickingMediaWithInfo:)` to supply the original image.
-        let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as! UIImage
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         imageView.image = image
         updateClassifications(for: image)
     }
