@@ -77,7 +77,7 @@
             <objects>
                 <viewController id="dt6-Gd-EpC" userLabel="Home View Controller" customClass="HomeViewController" customModule="E_Grow2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wEo-9q-vKD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOi-ay-vDg">
@@ -88,10 +88,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="BkZ-m9-r0Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Caf-Xr-6of"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Caf-Xr-6of">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="SwM-Sj-oc7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thY-hT-IfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -103,7 +109,7 @@
             <objects>
                 <viewController id="9cI-mZ-HpR" userLabel="Map View Controller" customClass="MapViewController" customModule="E_Grow2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s1x-nL-0jP" userLabel="Map View Controller">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Max-LR-2ms">
@@ -118,10 +124,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VSe-8k-WVZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="fg7-nY-kiR"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="fg7-nY-kiR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMA-vO-mCs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,9 +184,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-=======
-                            
->>>>>>> master
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nws-QY-ixM"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -191,7 +194,7 @@
                             <constraint firstItem="lKh-kD-b8H" firstAttribute="top" secondItem="4IF-fx-MDP" secondAttribute="top" constant="94" id="bB6-jz-Oij"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="9j1-Ye-btx"/>
+                    <tabBarItem key="tabBarItem" title="Photo" image="camera.fill" catalog="system" id="9j1-Ye-btx"/>
                     <navigationItem key="navigationItem" id="0So-7Q-bkX"/>
                     <connections>
                         <outlet property="cameraButton" destination="f8p-IH-hUo" id="DLX-81-MSy"/>
@@ -209,7 +212,7 @@
             <objects>
                 <viewController id="Hom-A9-HoB" userLabel="Account View Controller" customClass="AccountViewController" customModule="E_Grow2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NeR-DL-Xgk" userLabel="Account View Controller">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFc-1f-TSz">
@@ -219,14 +222,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muQ-b9-cNU">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muQ-b9-cNU">
                                 <rect key="frame" x="182" y="548" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log Out"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="aCt-nE-Sgk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="bbI-A4-IbY"/>
                     <navigationItem key="navigationItem" id="05V-4Y-gSZ"/>
@@ -306,10 +309,7 @@
                         <outlet property="nameTextField" destination="QBe-vM-h3b" id="jOm-AY-mrw"/>
                         <outlet property="passwordTextField" destination="MNd-TP-9LA" id="6h3-AT-WwM"/>
                         <outlet property="signupButton" destination="tGo-KW-M1U" id="GUi-Y3-sNu"/>
-                        <segue destination="raQ-bY-bCH" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="rID-TS-YJQ"/>
-=======
                         <segue destination="yPI-1V-fWF" kind="show" identifier="goToHome" id="5r2-C1-cuv"/>
->>>>>>> master
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTh-X3-JaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -371,9 +371,7 @@
                         <outlet property="loginButton" destination="f8P-PU-MVM" id="v3j-YU-ADQ"/>
                         <outlet property="passwordTextField" destination="Uzo-e3-dET" id="2vY-ix-fAQ"/>
                         <segue destination="raQ-bY-bCH" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="zVh-vW-MNQ"/>
-=======
                         <segue destination="yPI-1V-fWF" kind="show" identifier="goToHome" id="YN8-au-io0"/>
->>>>>>> master
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsY-N4-Q1r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -387,8 +385,17 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Egh-DK-AVX"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pA1-Z1-l7r">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" systemColor="systemGray2Color"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="dt6-Gd-EpC" kind="relationship" relationship="viewControllers" id="2Sk-WF-jf1"/>
@@ -404,11 +411,18 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="5r2-C1-cuv"/>
+        <segue reference="f77-vq-41v"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="e-grow logo" width="500" height="500"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
