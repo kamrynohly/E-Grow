@@ -212,18 +212,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFc-1f-TSz">
-                                <rect key="frame" x="186" y="98" width="64" height="21"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9qW-4D-t8q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2B-c3-aE5">
+                                        <rect key="frame" x="0.0" y="66" width="414" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxd-RZ-5Ak">
+                                <rect key="frame" x="83" y="743" width="248" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="ajX-zB-xpk" eventType="touchUpInside" id="eXd-Ib-9LL"/>
+                                    <action selector="logOutPressed:" destination="Hom-A9-HoB" eventType="touchUpInside" id="pez-Xf-hP5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xk-4W-4RP">
+                                <rect key="frame" x="121" y="623" width="183" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.79607843137254897" green="0.87450980392156863" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Tally Composting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addCompost:" destination="Hom-A9-HoB" eventType="touchUpInside" id="XDz-bd-n2E"/>
+                                    <action selector="loginButtonPressed:" destination="fni-eD-xVN" eventType="touchUpInside" id="dpt-OP-wFh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ph7-lq-qIJ">
+                                <rect key="frame" x="120" y="673" width="183" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.79607843140000001" green="0.87450980389999999" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Tally Recycling">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addRecycling:" destination="Hom-A9-HoB" eventType="touchUpInside" id="rKs-Qd-1Um"/>
+                                    <action selector="loginButtonPressed:" destination="fni-eD-xVN" eventType="touchUpInside" id="g49-Si-ZiL"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6m-Gy-FsW">
+                                <rect key="frame" x="87" y="397" width="250" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recycling: 23" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulp-Hu-Gjx">
+                                        <rect key="frame" x="11" y="92" width="219" height="93"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Composting: 11" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRa-YH-JAc">
+                                        <rect key="frame" x="16" y="8" width="219" height="93"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.95686274509803915" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohA-Pq-wgd">
+                                <rect key="frame" x="91" y="249" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Look at all of the work you've done! Be proud of yourself, we know we are :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9B-wO-9rr">
+                                <rect key="frame" x="20" y="112" width="384" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muQ-b9-cNU">
-                                <rect key="frame" x="182" y="548" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log Out"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aCt-nE-Sgk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -233,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nii-cU-5pc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2738" y="564"/>
+            <point key="canvasLocation" x="2737.68115942029" y="563.83928571428567"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="ezk-kw-KYH">
@@ -247,13 +320,13 @@
                                 <rect key="frame" x="52" y="261" width="311" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRS-rG-Dau">
                                 <rect key="frame" x="52" y="303" width="311" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QBe-vM-h3b">
                                 <rect key="frame" x="52" y="177" width="311" height="34"/>
@@ -325,7 +398,7 @@
                                 <rect key="frame" x="52" y="254" width="311" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8P-PU-MVM">
                                 <rect key="frame" x="116" y="427" width="183" height="42"/>
@@ -412,13 +485,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What does composting mean? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-nk-XPN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What does composting mean? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-nk-XPN">
                                 <rect key="frame" x="13" y="112" width="312" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QMA-0i-LoK">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QMA-0i-LoK">
                                 <rect key="frame" x="0.0" y="149" width="414" height="156"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -429,22 +503,25 @@
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="exz-Td-dC1">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="exz-Td-dC1">
                                 <rect key="frame" x="0.0" y="361" width="414" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">-Fruit and vegetables                                                             -Eggshells                                                                              -Coffee grounds and filters                                                  -Tea bags                                                                                 -Nut shells                                                                                -Shredded newspaper                                                            -Cardboard           </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What can I compost?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZl-JS-7yr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What can I compost?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZl-JS-7yr">
                                 <rect key="frame" x="13" y="324" width="206" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What does recycling mean? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t66-T0-G7B">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What does recycling mean? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t66-T0-G7B">
                                 <rect key="frame" x="20" y="586" width="277" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -463,8 +540,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7sg-Li-pBU">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7sg-Li-pBU">
                                 <rect key="frame" x="0.0" y="623" width="414" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Recycling is the process of collecting and processing materials that would otherwise be thrown away as trash and turning them into new products.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -474,28 +552,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KEG-st-pLz"/>
                         <color key="backgroundColor" red="0.92549639939999995" green="0.92547899479999995" blue="0.9254907966" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="ZCJ-nk-XPN" firstAttribute="leading" secondItem="KEG-st-pLz" secondAttribute="leading" constant="13" id="3ZQ-px-yT2"/>
-                            <constraint firstAttribute="bottom" secondItem="t66-T0-G7B" secondAttribute="bottom" constant="205" id="6OV-2y-OTO"/>
-                            <constraint firstItem="7sg-Li-pBU" firstAttribute="trailing" secondItem="exz-Td-dC1" secondAttribute="trailing" id="9ox-hN-c4n"/>
-                            <constraint firstItem="KEG-st-pLz" firstAttribute="trailing" secondItem="ZCJ-nk-XPN" secondAttribute="trailing" constant="89" id="AB7-e5-Knh"/>
-                            <constraint firstItem="t66-T0-G7B" firstAttribute="leading" secondItem="FoB-dT-rue" secondAttribute="leadingMargin" id="Lmv-uM-Ssf"/>
-                            <constraint firstItem="t66-T0-G7B" firstAttribute="top" secondItem="exz-Td-dC1" secondAttribute="bottom" constant="26" id="MNJ-mC-PEv"/>
-                            <constraint firstItem="7sg-Li-pBU" firstAttribute="leading" secondItem="QMA-0i-LoK" secondAttribute="leading" id="MsX-X6-C1W"/>
-                            <constraint firstItem="7sg-Li-pBU" firstAttribute="leading" secondItem="FoB-dT-rue" secondAttribute="leading" id="SFV-Pb-ntn"/>
-                            <constraint firstItem="ZCJ-nk-XPN" firstAttribute="top" secondItem="KEG-st-pLz" secondAttribute="top" constant="131" id="SHR-JZ-WIo"/>
-                            <constraint firstItem="7sg-Li-pBU" firstAttribute="leading" secondItem="exz-Td-dC1" secondAttribute="leading" id="SoG-Oq-3PT"/>
-                            <constraint firstItem="t66-T0-G7B" firstAttribute="leading" secondItem="oZl-JS-7yr" secondAttribute="leading" constant="7" id="UcP-AE-OPu"/>
-                            <constraint firstItem="7sg-Li-pBU" firstAttribute="top" secondItem="t66-T0-G7B" secondAttribute="bottom" constant="8" symbolic="YES" id="VsH-Fd-eHM"/>
-                            <constraint firstItem="oZl-JS-7yr" firstAttribute="top" secondItem="QMA-0i-LoK" secondAttribute="bottom" constant="34" id="WTC-3E-QkC"/>
-                            <constraint firstItem="QMA-0i-LoK" firstAttribute="top" secondItem="ZCJ-nk-XPN" secondAttribute="bottom" constant="8" symbolic="YES" id="axe-FY-OW1"/>
-                            <constraint firstItem="7sg-Li-pBU" firstAttribute="trailing" secondItem="QMA-0i-LoK" secondAttribute="trailing" id="dij-1f-4s0"/>
-                            <constraint firstItem="KEG-st-pLz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oZl-JS-7yr" secondAttribute="trailing" symbolic="YES" id="hTU-ZB-dpR"/>
-                            <constraint firstItem="KEG-st-pLz" firstAttribute="bottom" secondItem="7sg-Li-pBU" secondAttribute="bottom" constant="38" id="iV0-ai-bQV"/>
-                            <constraint firstItem="KEG-st-pLz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="t66-T0-G7B" secondAttribute="trailing" symbolic="YES" id="kx4-xm-fl0"/>
-                            <constraint firstItem="exz-Td-dC1" firstAttribute="top" secondItem="oZl-JS-7yr" secondAttribute="bottom" constant="8" id="rCt-0n-44r"/>
-                            <constraint firstAttribute="trailing" secondItem="7sg-Li-pBU" secondAttribute="trailing" id="xln-k9-kfs"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="zKY-9N-VuS"/>
                     <navigationItem key="navigationItem" id="ECW-CZ-NoM"/>
@@ -506,7 +562,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5r2-C1-cuv"/>
+        <segue reference="YN8-au-io0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="94"/>

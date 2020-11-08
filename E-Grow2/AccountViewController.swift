@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AccountViewController: UIViewController {
 
@@ -17,6 +18,26 @@ class AccountViewController: UIViewController {
     }
     
 
+    @IBAction func logOutPressed(_ sender: UIButton) {
+        
+        do {
+               try Auth.auth().signOut()
+           }
+        catch let signOutError as NSError {
+               print ("Error signing out: %@", signOutError)
+           }
+           
+           let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           let initial = storyboard.instantiateInitialViewController()
+           UIApplication.shared.keyWindow?.rootViewController = initial
+        
+    }
+    
+    @IBAction func addCompost(_ sender: Any) {
+    }
+    
+    @IBAction func addRecycling(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
