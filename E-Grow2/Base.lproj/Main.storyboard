@@ -72,38 +72,6 @@
             </objects>
             <point key="canvasLocation" x="-760" y="86"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="6I2-AD-BP0">
-            <objects>
-                <viewController id="dt6-Gd-EpC" userLabel="Home View Controller" customClass="HomeViewController" customModule="E_Grow2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wEo-9q-vKD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOi-ay-vDg">
-                                <rect key="frame" x="186" y="114" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="BkZ-m9-r0Q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Caf-Xr-6of">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBarItem>
-                    <navigationItem key="navigationItem" id="SwM-Sj-oc7"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="thY-hT-IfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1777" y="-184"/>
-        </scene>
         <!--Map View Controller-->
         <scene sceneID="I8q-1i-ULw">
             <objects>
@@ -113,21 +81,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Max-LR-2ms">
-                                <rect key="frame" x="20" y="20" width="374" height="452"/>
+                                <rect key="frame" x="0.0" y="185" width="414" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q12-rX-9jv">
-                                <rect key="frame" x="186" y="552" width="42" height="21"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GJ6-29-66m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recycling and Composting Centers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSa-70-QGM">
+                                        <rect key="frame" x="0.0" y="66" width="414" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find your local environmental sustainability centers!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61y-9H-3s1">
+                                <rect key="frame" x="20" y="112" width="374" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj8-cI-gu1">
+                                <rect key="frame" x="83" y="721" width="248" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                <state key="normal" title="Get More Information">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="ajX-zB-xpk" eventType="touchUpInside" id="lTm-5d-vAF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VSe-8k-WVZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="fg7-nY-kiR"/>
+                    <connections>
+                        <outlet property="mapView" destination="Max-LR-2ms" id="Tf4-RK-zhm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMA-vO-mCs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,7 +228,7 @@
                         <viewLayoutGuide key="safeArea" id="aCt-nE-Sgk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="bbI-A4-IbY"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="star.fill" catalog="system" id="bbI-A4-IbY"/>
                     <navigationItem key="navigationItem" id="05V-4Y-gSZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nii-cU-5pc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -309,7 +306,7 @@
                         <outlet property="nameTextField" destination="QBe-vM-h3b" id="jOm-AY-mrw"/>
                         <outlet property="passwordTextField" destination="MNd-TP-9LA" id="6h3-AT-WwM"/>
                         <outlet property="signupButton" destination="tGo-KW-M1U" id="GUi-Y3-sNu"/>
-                        <segue destination="yPI-1V-fWF" kind="show" identifier="goToHome" id="5r2-C1-cuv"/>
+                        <segue destination="yPI-1V-fWF" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="5r2-C1-cuv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTh-X3-JaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -370,8 +367,7 @@
                         <outlet property="emailTextField" destination="WQk-vS-WuI" id="1Df-T0-F7a"/>
                         <outlet property="loginButton" destination="f8P-PU-MVM" id="v3j-YU-ADQ"/>
                         <outlet property="passwordTextField" destination="Uzo-e3-dET" id="2vY-ix-fAQ"/>
-                        <segue destination="raQ-bY-bCH" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="zVh-vW-MNQ"/>
-                        <segue destination="yPI-1V-fWF" kind="show" identifier="goToHome" id="YN8-au-io0"/>
+                        <segue destination="yPI-1V-fWF" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="YN8-au-io0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsY-N4-Q1r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -398,26 +394,129 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="dt6-Gd-EpC" kind="relationship" relationship="viewControllers" id="2Sk-WF-jf1"/>
+                        <segue destination="Hom-A9-HoB" kind="relationship" relationship="viewControllers" id="kDP-Ur-mT2"/>
                         <segue destination="raQ-bY-bCH" kind="relationship" relationship="viewControllers" id="f77-vq-41v"/>
                         <segue destination="9cI-mZ-HpR" kind="relationship" relationship="viewControllers" id="Lmx-rx-fV4"/>
-                        <segue destination="Hom-A9-HoB" kind="relationship" relationship="viewControllers" id="kDP-Ur-mT2"/>
+                        <segue destination="VoJ-cT-mxe" kind="relationship" relationship="viewControllers" id="dHA-M0-gIM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ppv-Tj-GnW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="883" y="86"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="X6Y-j6-Lhr">
+            <objects>
+                <viewController id="VoJ-cT-mxe" customClass="HomeViewController" customModule="E_Grow2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FoB-dT-rue">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What does composting mean? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCJ-nk-XPN">
+                                <rect key="frame" x="13" y="112" width="312" height="29"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QMA-0i-LoK">
+                                <rect key="frame" x="0.0" y="149" width="414" height="156"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="PCf-ug-CUu"/>
+                                </constraints>
+                                <string key="text">Compost is organic material that can be added to soil to help plants grow. Food scraps and yard waste together currently make up more than 28 percent of what we throw away, and should be composted instead.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="exz-Td-dC1">
+                                <rect key="frame" x="0.0" y="361" width="414" height="197"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">-Fruit and vegetables                                                             -Eggshells                                                                              -Coffee grounds and filters                                                  -Tea bags                                                                                 -Nut shells                                                                                -Shredded newspaper                                                            -Cardboard           </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What can I compost?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZl-JS-7yr">
+                                <rect key="frame" x="13" y="324" width="206" height="29"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What does recycling mean? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t66-T0-G7B">
+                                <rect key="frame" x="20" y="586" width="277" height="29"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKj-YB-Raf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwt-Y7-z4F">
+                                        <rect key="frame" x="0.0" y="66" width="414" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.61176470589999998" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7sg-Li-pBU">
+                                <rect key="frame" x="0.0" y="623" width="414" height="110"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Recycling is the process of collecting and processing materials that would otherwise be thrown away as trash and turning them into new products.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KEG-st-pLz"/>
+                        <color key="backgroundColor" red="0.92549639939999995" green="0.92547899479999995" blue="0.9254907966" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ZCJ-nk-XPN" firstAttribute="leading" secondItem="KEG-st-pLz" secondAttribute="leading" constant="13" id="3ZQ-px-yT2"/>
+                            <constraint firstAttribute="bottom" secondItem="t66-T0-G7B" secondAttribute="bottom" constant="205" id="6OV-2y-OTO"/>
+                            <constraint firstItem="7sg-Li-pBU" firstAttribute="trailing" secondItem="exz-Td-dC1" secondAttribute="trailing" id="9ox-hN-c4n"/>
+                            <constraint firstItem="KEG-st-pLz" firstAttribute="trailing" secondItem="ZCJ-nk-XPN" secondAttribute="trailing" constant="89" id="AB7-e5-Knh"/>
+                            <constraint firstItem="t66-T0-G7B" firstAttribute="leading" secondItem="FoB-dT-rue" secondAttribute="leadingMargin" id="Lmv-uM-Ssf"/>
+                            <constraint firstItem="t66-T0-G7B" firstAttribute="top" secondItem="exz-Td-dC1" secondAttribute="bottom" constant="26" id="MNJ-mC-PEv"/>
+                            <constraint firstItem="7sg-Li-pBU" firstAttribute="leading" secondItem="QMA-0i-LoK" secondAttribute="leading" id="MsX-X6-C1W"/>
+                            <constraint firstItem="7sg-Li-pBU" firstAttribute="leading" secondItem="FoB-dT-rue" secondAttribute="leading" id="SFV-Pb-ntn"/>
+                            <constraint firstItem="ZCJ-nk-XPN" firstAttribute="top" secondItem="KEG-st-pLz" secondAttribute="top" constant="131" id="SHR-JZ-WIo"/>
+                            <constraint firstItem="7sg-Li-pBU" firstAttribute="leading" secondItem="exz-Td-dC1" secondAttribute="leading" id="SoG-Oq-3PT"/>
+                            <constraint firstItem="t66-T0-G7B" firstAttribute="leading" secondItem="oZl-JS-7yr" secondAttribute="leading" constant="7" id="UcP-AE-OPu"/>
+                            <constraint firstItem="7sg-Li-pBU" firstAttribute="top" secondItem="t66-T0-G7B" secondAttribute="bottom" constant="8" symbolic="YES" id="VsH-Fd-eHM"/>
+                            <constraint firstItem="oZl-JS-7yr" firstAttribute="top" secondItem="QMA-0i-LoK" secondAttribute="bottom" constant="34" id="WTC-3E-QkC"/>
+                            <constraint firstItem="QMA-0i-LoK" firstAttribute="top" secondItem="ZCJ-nk-XPN" secondAttribute="bottom" constant="8" symbolic="YES" id="axe-FY-OW1"/>
+                            <constraint firstItem="7sg-Li-pBU" firstAttribute="trailing" secondItem="QMA-0i-LoK" secondAttribute="trailing" id="dij-1f-4s0"/>
+                            <constraint firstItem="KEG-st-pLz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oZl-JS-7yr" secondAttribute="trailing" symbolic="YES" id="hTU-ZB-dpR"/>
+                            <constraint firstItem="KEG-st-pLz" firstAttribute="bottom" secondItem="7sg-Li-pBU" secondAttribute="bottom" constant="38" id="iV0-ai-bQV"/>
+                            <constraint firstItem="KEG-st-pLz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="t66-T0-G7B" secondAttribute="trailing" symbolic="YES" id="kx4-xm-fl0"/>
+                            <constraint firstItem="exz-Td-dC1" firstAttribute="top" secondItem="oZl-JS-7yr" secondAttribute="bottom" constant="8" id="rCt-0n-44r"/>
+                            <constraint firstAttribute="trailing" secondItem="7sg-Li-pBU" secondAttribute="trailing" id="xln-k9-kfs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="zKY-9N-VuS"/>
+                    <navigationItem key="navigationItem" id="ECW-CZ-NoM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rL-nG-fec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1700.0000000000002" y="-184.15178571428569"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="5r2-C1-cuv"/>
-        <segue reference="f77-vq-41v"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="e-grow logo" width="500" height="500"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="map" catalog="system" width="128" height="110"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
