@@ -10,11 +10,18 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loginButton.layer.cornerRadius = 22
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.init(red: 224/255, green: 224/255, blue: 224/255, alpha: 1).cgColor
+        signupButton.layer.cornerRadius = 22
     }
+    
     
 
     /*

@@ -15,7 +15,8 @@ class ImageClassificationViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var cameraButton: UIButton!
-    @IBOutlet weak var classificationLabel: UILabel!
+    @IBOutlet weak var itemLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +50,7 @@ class ImageClassificationViewController: UIViewController {
     
     /// - Tag: PerformRequests
     func updateClassifications(for image: UIImage) {
-        classificationLabel.text = "Classifying..."
+        itemLabel.text = "Classifying..."
         
         let orientation = CGImagePropertyOrientation(image.imageOrientation)
         guard let ciImage = CIImage(image: image) else { fatalError("Unable to create \(CIImage.self) from \(image).") }
@@ -74,22 +75,27 @@ class ImageClassificationViewController: UIViewController {
     func processClassifications(for request: VNRequest, error: Error?) {
         DispatchQueue.main.async {
             guard let results = request.results else {
-                self.classificationLabel.text = "Unable to classify image.\n\(error!.localizedDescription)"
+                self.itemLabel.text = "Unable to classify image.\n\(error!.localizedDescription)"
                 return
             }
             // The `results` will always be `VNClassificationObservation`s, as specified by the Core ML model in this project.
             let classifications = results as! [VNClassificationObservation]
         
             if classifications.isEmpty {
-                self.classificationLabel.text = "Nothing recognized."
+                self.itemLabel.text = "Nothing recognized."
             } else {
                 // Display top classifications ranked by confidence in the UI.
                 let topClassifications = classifications.prefix(2)
                 let descriptions = topClassifications.map { classification in
-                    // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
-                   return String(format: "  (%.2f) %@", classification.confidence, classification.identifier)
+                    // Formats the classification for display; e.g. "cliff, drop, drop-off".
+                   return String(format: "%@", classification.identifier)
                 }
-                self.classificationLabel.text = "Classification:\n" + descriptions.joined(separator: "\n")
+                self.itemLabel.text = "Item: " + descriptions[0]
+                
+                // Classify as compostable, recyclable, or neither
+                if (descriptions[0] == "banana") {
+                    self.categoryLabel.text = "Compostable!"
+                }
             }
         }
     }
