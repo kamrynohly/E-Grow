@@ -13,12 +13,15 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
-        // Do any additional setup after loading the view.
+        loginButton.layer.cornerRadius = 22
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.init(red: 224/255, green: 224/255, blue: 224/255, alpha: 1).cgColor
     }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
