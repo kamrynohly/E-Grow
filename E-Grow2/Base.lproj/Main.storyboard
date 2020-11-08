@@ -463,10 +463,10 @@
                         </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
-                        <segue destination="Hom-A9-HoB" kind="relationship" relationship="viewControllers" id="kDP-Ur-mT2"/>
                         <segue destination="raQ-bY-bCH" kind="relationship" relationship="viewControllers" id="f77-vq-41v"/>
-                        <segue destination="9cI-mZ-HpR" kind="relationship" relationship="viewControllers" id="Lmx-rx-fV4"/>
                         <segue destination="VoJ-cT-mxe" kind="relationship" relationship="viewControllers" id="dHA-M0-gIM"/>
+                        <segue destination="9cI-mZ-HpR" kind="relationship" relationship="viewControllers" id="Lmx-rx-fV4"/>
+                        <segue destination="Hom-A9-HoB" kind="relationship" relationship="viewControllers" id="kDP-Ur-mT2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ppv-Tj-GnW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
