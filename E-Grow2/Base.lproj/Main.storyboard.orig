@@ -54,24 +54,6 @@
                                 <color key="textColor" red="0.79607843137254897" green="0.87450980392156863" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yid-IC-005">
-                                <rect key="frame" x="177" y="647" width="60" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <segue destination="fni-eD-xVN" kind="show" id="h7u-E6-cPA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqm-mi-kqH">
-                                <rect key="frame" x="164" y="711" width="86" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <segue destination="ajX-zB-xpk" kind="show" id="Tdj-WX-liv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5ef-sU-07z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -88,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9C-bb-GFk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-760" y="86"/>
+            <point key="canvasLocation" x="-760.86956521739137" y="85.714285714285708"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="6I2-AD-BP0">
@@ -258,6 +240,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCn-zb-c4p" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <point key="canvasLocation" x="1382.608695652174" y="176.78571428571428"/>
+=======
+=======
+>>>>>>> 5d1bceed1170aadc6153f96e4e5461a549aa3980
             <point key="canvasLocation" x="1828" y="564"/>
         </scene>
         <!--Account View Controller-->
@@ -290,6 +278,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nii-cU-5pc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2738" y="564"/>
+<<<<<<< HEAD
+>>>>>>> master
+=======
+>>>>>>> 5d1bceed1170aadc6153f96e4e5461a549aa3980
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="ezk-kw-KYH">
@@ -362,11 +354,15 @@
                         <outlet property="nameTextField" destination="QBe-vM-h3b" id="jOm-AY-mrw"/>
                         <outlet property="passwordTextField" destination="MNd-TP-9LA" id="6h3-AT-WwM"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <outlet property="signupButton" destination="tGo-KW-M1U" id="GUi-Y3-sNu"/>
                         <segue destination="raQ-bY-bCH" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="rID-TS-YJQ"/>
 =======
                         <segue destination="yPI-1V-fWF" kind="show" identifier="goToHome" id="5r2-C1-cuv"/>
 >>>>>>> master
+=======
+                        <segue destination="yPI-1V-fWF" kind="show" identifier="goToHome" id="5r2-C1-cuv"/>
+>>>>>>> 5d1bceed1170aadc6153f96e4e5461a549aa3980
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DTh-X3-JaF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -428,10 +424,14 @@
                         <outlet property="loginButton" destination="f8P-PU-MVM" id="v3j-YU-ADQ"/>
                         <outlet property="passwordTextField" destination="Uzo-e3-dET" id="2vY-ix-fAQ"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <segue destination="raQ-bY-bCH" kind="presentation" identifier="goToHome" modalPresentationStyle="fullScreen" id="zVh-vW-MNQ"/>
 =======
                         <segue destination="yPI-1V-fWF" kind="show" identifier="goToHome" id="YN8-au-io0"/>
 >>>>>>> master
+=======
+                        <segue destination="yPI-1V-fWF" kind="show" identifier="goToHome" id="YN8-au-io0"/>
+>>>>>>> 5d1bceed1170aadc6153f96e4e5461a549aa3980
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsY-N4-Q1r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
